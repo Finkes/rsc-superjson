@@ -1,0 +1,41 @@
+{
+  "name": "rsc-superjson",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "typescript",
+    "superjson",
+    "rsc",
+    "next.js",
+    "Decimal",
+    "prisma"
+  ],
+  "author": "Dominik Finkbeiner",
+  "license": "MIT",
+  "description": "A superjson wrapper for React Server Components (RSC) and Next.js",
+  "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.3.6",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "prettier": "3.5.3",
+    "superjson": "^2.2.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2"
+  },
+  "peerDependencies": {
+    "superjson": "^2.2.2"
+  }
+}
