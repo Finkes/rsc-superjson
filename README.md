@@ -1,7 +1,7 @@
 # rsc-superjson
 Superjson wrapper for React Server Components (RSC) in Next.js 13+. 
 Inspired by [next-superjson-plugin](https://github.com/blitz-js/next-superjson-plugin). This package
-enables seamless serialization of custom types between server components and client components in React.
+enables seamless serialization of custom types between server components and client components in React using [superjson](https://github.com/flightcontrolhq/superjson).
 
 > **Note:** You don't need this package if all the types you need are supported by React. 
 > [See all supported types here](https://react.dev/reference/rsc/use-server#serializable-parameters-and-return-values)!
@@ -126,3 +126,6 @@ export function CustomSuperjsonAction<
   return SuperjsonAction(action);
 }
 ```
+
+## Samples
+See [samples](../samples) for a working Next.js 15 project.

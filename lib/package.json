@@ -1,15 +1,17 @@
 {
   "name": "rsc-superjson",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && cp ../README.md ./README.md",
+    "postpublish": "rm README.md"
   },
   "keywords": [
     "react",
@@ -22,6 +24,7 @@
     "prisma"
   ],
   "author": "Dominik Finkbeiner",
+  "repository": "https://github.com/Finkes/rsc-superjson",
   "license": "MIT",
   "description": "A superjson wrapper for React Server Components (RSC) and Next.js",
   "devDependencies": {
