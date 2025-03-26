@@ -128,4 +128,4 @@ export function CustomSuperjsonAction<
 ```
 
 ## Samples
-See [samples](../samples) for a working Next.js 15 project.
+See [samples](./samples) for a working Next.js 15 project.
