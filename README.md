@@ -7,6 +7,7 @@ enables seamless serialization of custom types between server components and cli
 > [See all supported types here](https://react.dev/reference/rsc/use-server#serializable-parameters-and-return-values)!
 
 ## Why use this package?
+- ✅ **Type-Safe Wrapper**
 - ✅ **Seamless integration**
 - ✅ **No SWC plugin required**
 - ✅ **Support for Custom Types**
