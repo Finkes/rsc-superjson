@@ -5,7 +5,7 @@ export function SuperjsonAction<
 >(action: ServerAction) {
   // should have the same signature as the original action
   type Args = Parameters<typeof action>;
-  return async (...args: Args): Promise<ReturnType<ServerAction>> => {
+  return async (...args: Args): Promise<Awaited<ReturnType<ServerAction>>> => {
     return serializeWithSuperJSON(() => action(...args))
   };
 }
